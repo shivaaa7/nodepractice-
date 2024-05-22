@@ -2,6 +2,7 @@ const express = require("express")
 const mongoose = require ("mongoose");
 const bodyParser = require("body-parser");
 const dotenv = require ("dotenv");
+const path = require('path');
 
 const app = express();
 dotenv.config();
@@ -57,6 +58,8 @@ app.post("/cont" , async (req,res) => {
     }
 })
 
+app.use(express.static(path.join(__dirname, 'pages')));
+
 app.get("/success", (req, res) => {
     res.sendFile(__dirname+"/pages/success.html");
 })
@@ -69,8 +72,8 @@ app.get("/projectPage/project.html", (req, res) => {
     res.sendFile(__dirname+"/pages/projectPage/project.html");
 })
 
-app.get("/contactPage/contact.html", (req, res) => {
-    res.sendFile(__dirname+"/pages/contactPage/contact.html");
+app.get("/blogPage/blog.html", (req, res) => {
+    res.sendFile(__dirname+"/pages/blogPage/blog.html");
 })
 
 app.get("/contactPage/contact.html", (req, res) => {
