@@ -9,6 +9,7 @@
 }
 
 
+
 html,body{
   width:100%;
   height:100%;
@@ -627,3 +628,68 @@ footer {
     
 }
   
+/* Center the form */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #f5f5f5; Optional: Add a background color for better visibility */
+}
+
+/* Style the form */
+form {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input boxes and textarea */
+input.box, input.form-control, textarea.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style the button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Button text styling */
+.btn-text-one {
+  display: inline-block;
+}
+
+.btn-text-two {
+  display: none;
+}
+
+.btn:hover .btn-text-one {
+  display: none;
+}
+
+.btn:hover .btn-text-two {
+  display: inline-block;
+}
+
+.msg{
+
+  height: 40px;
+}
