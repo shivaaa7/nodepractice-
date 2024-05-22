@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Template Main CSS File -->
+    <link href="../styles/contact.css" rel="stylesheet">
+
+    <style>
+        /* Basic styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900& display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+html,body{
+  width:100%;
+  height:100%;
+  color: black;
+  background-color: #ffffff;
+}
+.header {
+ width:100%;
+ padding: 20px 3%;
+ justify-content: space-between;
+ height:80px;
+ transition:all 0.5s;
+ z-index:997;
+ background:#fff;
+ 
+ box-shadow:0px 6px 9px 0px rgba(0,0,0,0.06);
+ align-items: center !important;
+ position:fixed; 
+ display:flex !important;
+}
+.logo {
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact{
+  background: #ed7e23;
+  
+  color: #fff;
+  border-radius:5px;
+  padding: 10px 10px;
+
+}
+
+.navbar a{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #738da8;
+}
+
+#main img{
+  display: flex;
+  width: 120px;
+  height: 80px;
+}
+
+
+#head h1 a{
+  display: flex;
+  padding-right: 20% ;
+  
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+.home {
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  padding: 0 10%;
+  
+}
+.home-content {
+  
+  max-width: 600px;
+  margin-left: 20px;
+  margin-top: 180px;
+
+}
+span {
+  color: #738da8;
+}
+
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  color:#ed7e23;
+}
+.home-content p{
+  font-size: 16px;
+}
+
+.img {
+  position:relative;
+  top: 0;
+  left: 5%;
+  height: 600px;
+  width: 1000px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#main{
+  height:100px;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* input{
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  width: 300px;
+  height:100%;
+  
+
+} */
+
+form {
+  
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 600px;
+  height: 372px;
+  display: flex;
+  flex-direction: column;
+}
+form input{
+  flex:1;
+  border: none;
+  outline:none;
+  border: 2px solid grey;
+}
+
+form button{
+  background:#ed7e23;
+  padding: 10px 30px;
+  margin-left: 5px;
+  border:none;
+  outline: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Contact Section
+--------------------------------*/
+.contact-container{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.contact-container .hero-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/ContactPageImage.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.hero-container p {
+  color:black;
+}
+.hero-container p {
+  font-size:30px;
+}
+.form-control{
+  font-size:20px;
+  /*border-color: #00f2fe;*/
+  border-radius:8px;
+  border-style:none;
+  padding:9px;
+}
+
+.btn {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  left:186px;
+}
+
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+}
+
+
+
+.contact-container .hero-container .hero-text .bi{
+  font-size:50px;
+  color: black;
+  padding-right:10px;
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+
+  cursor: pointer;
+}
+.form-container{
+  margin: 166px 491px;
+  margin-top: -13px;
+}
+
+.team-container , #contact  h2{
+ /* padding:20px;
+  text-align: center;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;*/
+
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.team-container-title {
+  color:#ed7e23;
+}
+
+textarea {
+  width: 551px;
+  height: 156px;
+  /*border-color: cyan;*/
+}
+
+.form-group {
+  padding:10px;
+}
+
+/* .team-container{
+  
+  
+} */
+.wrapper {
+  /* max-width: 1100px; */
+  width: 100%;
+  position: relative;
+  /* margin:100px; */
+  border:50px;
+  padding:105px;
+  /* left:30px; */
+}
+.wrapper h2{
+  font-size: 1.5rem;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #EE8023;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  color:#ffffff;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+#left{
+  left: 19px;
+}
+#right{
+  right: 19px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  /* width:1090px; */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  width:240px;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  border-style: solid;
+  border-width:thin;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper .carousel{
+    width:1000px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------
+#Blogs
+---------------------------------------------------------------*/
+.main{
+  width:100vw;
+}
+
+.left-column {
+  float: left;
+  width: 75%;
+  padding:22px;
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+  
+}
+
+/* Right column */
+.right-column {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  position:relative;
+  left: 54px;
+ 
+  
+}
+/*clears floar after column*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.blog h2 {
+  color:black;
+  margin:18px;
+}
+
+.blog-post-img img{
+  width: 100%;
+}
+
+.recent-popst-img img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  display:flex;
+  border-radius: 0.8rem;
+}
+
+
+.blog-container{
+  max-width:100%;
+  /*height:100vh;*/
+  display:flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  
+ 
+ 
+  
+  
+  background-color:#ffffff;
+  padding-top:80px;
+
+}
+
+.blog-post{
+ 
+  /*width: 100%;
+  max-width: 47rem;*/
+ 
+  padding:0  1rem;
+  margin:20px;
+  
+  /*background-color: #fff;
+  box-shadow: 0 1.4rem 8rem rgba(0,0,0,0.2);*/
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+}
+.blog-post a{
+  position:relative;
+  left:351px;
+}
+.recent-post{
+  width: 100%;
+  max-width: 60rem;
+  margin:20px;
+  padding:7px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.8rem;
+  position:relative;
+  right:26px;
+}
+
+
+.blog-post-img{
+  width:416px;
+  height:238px;
+  
+  position: relative;
+
+}
+.recent-post-img{
+  min-width: 9.2rem;
+  max-width:9.2rem;
+  height: 9.2rem;
+  
+  position: relative;
+}
+
+.blog-post-img img{
+  width: 114%;
+  height:100%;
+  object-fit:cover;
+  display: block;
+  border-radius: 0.8rem;
+}
+/*.recent-popst-img img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  display:flex;
+  border-radius: 0.8rem;
+}*/
+
+.recent-post-img img{
+  width: 70%;
+  height:70%;
+  object-fit:cover;
+  display: block;
+  border-radius: 0.8rem;
+}
+
+.blog-post-img::before{
+  content: "";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0,0,0,0.05);
+  border-radius:  0.8rem;
+}
+
+
+.blog-post-date,.recent-post span{
+  display:block;
+  color: rgba(0,0,0,0.5);
+  font-size:0.6rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+}
+
+.blog-post-tittle{
+  font-size: 1.5rem;
+  /*margin: 1.5 rem 0 2rem;*/
+  text-transform: uppercase;
+  color: #4facfe;
+}
+.recent-post-title{
+  font-size: 1.5rem;
+  /*margin: 1.5 rem 0 2rem;*/
+  text-transform: uppercase;
+  color: #4facfe;
+}
+
+.blog-post-text{
+  margin-bottom: 3rem;
+  font-size:1.09rem;
+  color: rgba(0,0,0,0.7);
+
+}
+
+
+
+
+
+@media screen and (max-width: 1068px){
+  .blog-post{
+      max-width: 42rem;
+  }
+
+  .blog-post-img{
+      min-width: 25rem;
+      max-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 868px){
+  .blog-post{
+      max-width: 32rem;
+  }
+
+}
+@media screen and (max-width: 768px){
+  .blog-post{
+      padding:2.5rem;
+      flex-direction: column;
+  }
+
+  .blog-post-img{
+      min-width: 100%;
+      max-width: 100%;
+      transform: translate(0, -5.5rem);
+  }
+}
+
+
+footer {
+    background-color:rgb(236, 90, 17);
+    text-align: center;
+    padding: 1rem;
+    
+}
+  
+
+    </style>
+</head>
+<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+<body>
+    <div class="contact-container">
+
+
+
+        <!-- ======= Header ======= -->
+        <header class="header">
+            <!-- <img src="img\Logo.png" alt="img\Logo.png"> -->
+            <a href="#" class="logo">CIT <span>CELL</span></a>
+            <nav class="navbar">
+                <a href="../index.html" class="active">HOME</a>
+                <a href="#">EVENTS</a>
+                <a href="../projectPage/project.html">PROJECTS</a>
+                <a href="../blogPage/blog.html">BLOG</a>
+                <a id="contact" href="contact.html">CONTACT US</a>
+
+
+            </nav>
+        </header>
+
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1><strong>Get in touch with us</strong></h1>
+                <p>We're here to help and answer any questions you may have.</p>
+
+            </div>
+        </div>
+
+        <section id="team" class="team-container">
+            <h2 class="team-container-title"><strong>Meet Our Team</strong></h2>
+            
+
+            <div class="wrapper">
+                
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="../images/vivek.jpg" alt="img" draggable="false"></div>
+                        <h2>Vivek Anand Ram</h2>
+                        <span>IT Team Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/shivam kumar.jpg" alt="img" draggable="false"></div>
+                        <h2>Shivam Kumar</h2>
+                        <span>IT Team Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/udayan banik.jpg" alt="img" draggable="false"></div>
+                        <h2>Udayan Banik</h2>
+                        <span>IT Team Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/atabi debnath.jpg" alt="img" draggable="false"></div>
+                        <h2>Atabi Debnath</h2>
+                        <span>Design Team Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/dakoji karthik.jpg" alt="img" draggable="false"></div>
+                        <h2>Dakoji Karthik</h2>
+                        <span>Design Team Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/tushar burman.jpg" alt="img" draggable="false"></div>
+                        <h2>Tushar Burman</h2>
+                        <span>Design Team Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/siddharth kumar.jpg" alt="img" draggable="false"></div>
+                        <h2>Siddharth Kumar</h2>
+                        <span>Core Team Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/udayan das.jpg" alt="img" draggable="false"></div>
+                        <h2>Udayan Das</h2>
+                        <span>Core Team Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/mounadip malakar.jpg" alt="img" draggable="false"></div>
+                        <h2>Mounadip Malakar</h2>
+                        <span>Core Team Head</span>
+                    </li>
+
+                    <li class="card">
+                        <div class="img"><img src="../images/krishanu nath.jpg" alt="img" draggable="false"></div>
+                        <h2>Krishanu Nath</h2>
+                        <span>Founder & Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/sreyashi adhikari.jpg" alt="img" draggable="false"></div>
+                        <h2>Sreyashi Adhikari</h2>
+                        <span>Founder & Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/bishmoy kr das.jpg" alt="img" draggable="false"></div>
+                        <h2>Bishmoy Kumar Das</h2>
+                        <span>Co-Head</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="../images/subhradeep roy.jpg" alt="img" draggable="false"></div>
+                        <h2>Subhradeep Roy</h2>
+                        <span>Co-Head</span>
+                    </li>
+
+
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact">
+            <h2><strong>Send Us a Message</strong></h2>
+
+
+
+
+            <div class="col-md-6 main">
+                <form action="/cont" method="POST">
+                    <h2> Registration Form</h2>
+                    <input type="text" class="box" id="name" name="name" placeholder="Name" required/>
+                    <br>
+                    <input type="text" class="box" id="email" name="email" placeholder="EmailId" required/>
+                    <br>
+                    <input type="text" class="box" id="phno" name="phno" placeholder="Mobile" required/>
+                    <br>
+                    <input type="text" class="form-control form-group mt-3" name="subject" id="subject" placeholder="Subject" size="100"
+                    required>
+                    <br>
+                    <textarea  class="form-control form-group mt-3" name="message" rows="5" cols="5" placeholder="Message" width="200px"
+                    required></textarea>
+                    <br>
+                    <button class="btn ">
+                        <span class="btn-text-one">Send</span>
+                        <span class="btn-text-two">Great!</span>
+                    </button>
+                    </form>
+                </form>
+            </div>
+
+
+            
+            <!-- <div class="form-container">
+                <form>
+                    <div class="row">
+                        <div class="form-group mt-3">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" size="50"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" size="50"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="phone" class="form-control" name="phone" id="phone"
+                                placeholder="Your Phone Number" size="50" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" size="50"
+                            required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" width="200px"
+                            required></textarea>
+                    </div>
+
+
+
+                    <div class="text-center my-3">
+                        <button class="btn ">
+                            <span class="btn-text-one">Send</span>
+                            <span class="btn-text-two">Great!</span>
+                        </button>
+                    </div>
+                </form>
+            </div> -->
+        </section><!-- End Contact Section -->
+
+        
+
+    </div>
+
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <p>&copy; 2024 CITCELL. All rights reserved.</p>
+        <a href="nita.citc@gmail.com">nita.citc@gmail.com</a>
+    </footer>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

@@ -18,8 +18,10 @@ mongoose.connect(`mongodb+srv://${username}:${password}@registrationpg.8dqyzvl.m
 // registration schema
 const registrationSchema = new mongoose.Schema({
     name : String, 
+    phone : Number,
     email : String ,
-    password : String
+    subject : String,
+    message : String
 });
 
 //model of registration schema
@@ -34,14 +36,16 @@ app.get("/" , (req,res) =>{
 })
 
 
-app.post("/register" , async (req,res) => {
+app.post("/cont" , async (req,res) => {
     try{
-        const{name,email,password} = req.body;
+        const{name,phone ,email,subject, message} = req.body;
 
         const registrationData = new Registration({
            name,
+           phone,
            email,
-           password 
+           subject ,
+           message
         });
         await registrationData.save();
         res.redirect("/success");
@@ -61,7 +65,17 @@ app.get("/error", (req, res) => {
     res.sendFile(__dirname+"/pages/error.html");
 })
 
+app.get("/projectPage/project.html", (req, res) => {
+    res.sendFile(__dirname+"/pages/projectPage/project.html");
+})
 
+app.get("/contactPage/contact.html", (req, res) => {
+    res.sendFile(__dirname+"/pages/contactPage/contact.html");
+})
+
+app.get("/contactPage/contact.html", (req, res) => {
+    res.sendFile(__dirname+"/pages/contactPage/contact.html");
+})
 
 app.listen(port , ()=>{
     console.log(`server is running on port ${port}`);
